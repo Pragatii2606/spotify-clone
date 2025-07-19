@@ -104,6 +104,10 @@ nav ul li{
  margin: 0 12px;
  display: flex;
  align-items: center;
+ justify-content: space-between;
+  width: 80px;
+  font-size: 20px;
+  display: inline-block;
 }
 .timestamp{
   margin: 0 23px;
@@ -113,7 +117,7 @@ nav ul li{
     position: absolute;
     left: 10vw;
 }
-@media only screen and(max-width:1100px){
+@media only screen and (max-width:1100px){
     body{
         background-color: aquamarine;
     }
