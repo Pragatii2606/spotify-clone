@@ -77,9 +77,13 @@ masterPlay.addEventListener('click', () => {
             playBtn.classList.remove('fa-play-circle');
             playBtn.classList.add('fa-pause-circle');
         }
+         masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
     } else {
         pauseSong();
         makeAllPlays(); 
+         masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
     }
 });
 
@@ -101,6 +105,8 @@ document.querySelectorAll('.songItemPlay').forEach((element, i) => {
         e.target.classList.add('fa-pause-circle');
         songIndex = i;
         playSong(songIndex);
+          masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
     });
 });
 
